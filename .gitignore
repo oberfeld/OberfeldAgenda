@@ -1,8 +1,8 @@
-*/logs/log-*.php
-!*/logs/index.html
-*/cache/*
-!*/cache/index.html
-!*/cache/.htaccess
+www/application/logs/log-*.php
+!www/application/logs/index.html
+www/application/cache/*
+!www/application/cache/index.html
+!www/application/cache/.htaccess
 
 .vscode/
 

@@ -1,0 +1,18 @@
+{
+  "name": "oberfeldagenda",
+  "version": "1.0.0",
+  "description": "Einfaches Frontend zur Reservation von Räumen und Erfassung von Terminen",
+  "scripts": {
+    "serve": "php -S localhost:8000 -t www router.php"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oberfeld/OberfeldAgenda.git"
+  },
+  "author": "Christian Studer <cstuder@existenz.ch>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/oberfeld/OberfeldAgenda/issues"
+  },
+  "homepage": "https://github.com/oberfeld/OberfeldAgenda#readme"
+}
