@@ -25,6 +25,18 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 $config['base_url'] = '';
 
+switch(ENVIRONMENT) {
+    default:
+        throw new Exception('base_url not defined for this environment.');
+    
+    case 'production':
+        $config['base_url'] = 'https://agenda.oberfeld.be/';
+        break;
+
+    case 'development':
+        $config['base_url'] = 'http://localhost:8000/';
+        break;
+}
 /*
 |--------------------------------------------------------------------------
 | Index File

@@ -19,3 +19,7 @@ Keine lokale Datenbank, alle Daten sind direkt auf dem CalDav-Server gespeichert
 - [ ] Editierfenster zum Ändern oder Löschen des Termins (Sofern der Termin in der Zukunft liegt)
 - [ ] Jeweils Bestätigungsmail an die Person und Kopie an die Verantwortliche Person
 - [ ] Audit-Log schreiben bei allen Änderungen
+
+## Credits
+
+Icon `if_schedule_3755` by Everaldo Coelho. (LGPL licensed.)
