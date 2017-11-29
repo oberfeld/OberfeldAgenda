@@ -8,6 +8,11 @@ class Agenda extends MY_Controller {
 	 */
 	public function index()
 	{
-		$this->display('hallo', 'Kalender');
+		// Fetch calendars
+		$calendars = $this->calendar->getAllCalendars();
+
+		// Output
+		$content = $this->load->view('calendar/list', ['calendars' => $calendars], TRUE);
+		$this->display($content);
 	}
 }
