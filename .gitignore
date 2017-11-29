@@ -5,3 +5,5 @@
 !*/cache/.htaccess
 
 .vscode/
+
+.DS_Store
