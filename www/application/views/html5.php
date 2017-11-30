@@ -1,6 +1,6 @@
 <?php
 /**
- * HTML5 header with Material Design Lite loaded
+ * HTML5 header with Material Design Lite loaded and grid ready
  * 
  * @param string $title
  * @param string $content
@@ -37,7 +37,11 @@ $title = isset($title) ? "Oberfeld Agenda - " : 'Oberfeld Agenda';
     </div>
   </header>
   <main class="mdl-layout__content">
-    <div class="page-content"><?php echo $content; ?></div>
+    <div class="page-content">
+      <div class="mdl-grid">
+        <?php echo $content; ?>
+      </div>
+    </div>
   </main>
 </div>
 </body>
