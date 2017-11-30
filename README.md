@@ -2,6 +2,18 @@
 
 Einfaches Frontend zur Reservation von Räumen und Erfassung von Terminen
 
+## Funktionen
+
+- [x] Alle verfügbaren Kalender auflisten
+- [x] Kalender inkl. Infotext und ICS-Link anzeigen. Kalender wird direkt in einem iFrame von Nextcloud eingebunden
+- [x] Knopf zum Erstellen eines neuen Termins
+- [ ] Termin-Formular mit Startzeit, Endzeit, Titel, Name, Email, Telefon, Speichern
+- [ ] Bestätigungsmail an die Person und Kopie an die Verantwortliche Person
+- [ ] Im Mail: Direkter Link zurück zum Editieren des Termins, im Anhang der Termin als iCal-Event
+- [ ] Editierfenster zum Ändern oder Löschen des Termins (Sofern der Termin in der Zukunft liegt)
+- [ ] Jeweils Bestätigungsmail an die Person und Kopie an die Verantwortliche Person
+- [ ] Audit-Log schreiben bei allen Änderungen
+
 ## Entwicklung
 
 `npm run serve` -> <http://localhost:8000>
@@ -9,10 +21,16 @@ Einfaches Frontend zur Reservation von Räumen und Erfassung von Terminen
 - Keine lokale Datenbank, alle Daten sind direkt auf dem CalDav-Server gespeichert.
 - Konfiguration unter `www/application/config/ENVIRONMENT/agenda.php`.
 
-## Neuen Kalender einrichten
+### Deployment
+
+Noch nicht eingerichtet.
+
+## Administration
+
+### Neuen Kalender einrichten
 
 - Passendes Foto machen und als 1024 px breites Bild im Ordner `www/images` ablegen.
-- Als `IT Oberfeld` einloggen.
+- Als `IT Oberfeld` in der Nextcloud einloggen.
 - Auf <https://nextcloud.oberfeld.be/index.php/apps/calendar/> einen neuen Kalender erstellen, Name, Farbe festlegen.
 - Kalender teilen mit Benutzer `agendaUser` (Production) oder `agendaTestUser` (Development).
 - Jeweils Häcklein bei `kann bearbeiten` und `Link teilen` setzen.
@@ -34,19 +52,7 @@ $config['calendars'] = [
 ];
 ```
 
-- Optional HTML-Snippet mit Kalenderinfos unter `www/application/views/calendar-infos/` als PHP-Datei ablegen.
-
-## Funktionen
-
-- [x] Alle verfügbaren Kalender auflisten
-- [x] Kalender inkl. Infotext und ICS-Link anzeigen. Kalender wird direkt in einem iFrame von Nextcloud eingebunden
-- [x] Knopf zum Erstellen eines neuen Termins
-- [ ] Termin-Formular mit Startzeit, Endzeit, Titel, Name, Email, Telefon, Speichern
-- [ ] Bestätigungsmail an die Person und Kopie an die Verantwortliche Person
-- [ ] Im Mail: Direkter Link zurück zum Editieren des Termins, im Anhang der Termin als iCal-Event
-- [ ] Editierfenster zum Ändern oder Löschen des Termins (Sofern der Termin in der Zukunft liegt)
-- [ ] Jeweils Bestätigungsmail an die Person und Kopie an die Verantwortliche Person
-- [ ] Audit-Log schreiben bei allen Änderungen
+- Optional HTML-Snippet mit Kalenderinfos unter `www/application/views/calendar-infos/` als PHP-Datei ablegen (I.e. `sauna-infos.php`).
 
 ## Credits
 
