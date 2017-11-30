@@ -22,6 +22,7 @@ $title = isset($title) ? "Oberfeld Agenda - " : 'Oberfeld Agenda';
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="<?php echo base_url('mdl/material.min.css'); ?>">
+    <link rel="stylesheet" href="<?php echo base_url('css/agenda.css'); ?>">
     <script src="<?php echo base_url('mdl/material.min.js'); ?>"></script>
 </head>
 <body>

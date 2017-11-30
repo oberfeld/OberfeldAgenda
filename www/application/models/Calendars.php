@@ -6,13 +6,24 @@
  */
 class Calendars extends CI_Model {
     /**
-     * Get all calendars with all details
+     * Get all calendars with all details as configured in `config/agenda.php`
+     * 
+     * Adds URLs to Nextcloud to the configured calendars.
      *
      * @return array
      */
     public function getAllCalendars() {
         $calendars = [];
-        // TODO complete this
+
+        $calendarsAsConfigured = $this->config->item('calendars');
+
+        // TODO complete this: Augment the objects with de-serialized CalDav-Objects
+        foreach($calendarsAsConfigured as $cal) {
+            $cal['embedUrl'] = $this->config->item('nextcloud') . "index.php/apps/calendar/embed/{$cal['key']}";
+            $cal['aboUrl'] = str_replace('https', 'webcal', $this->config->item('nextcloud')) . "remote.php/dav/public-calendars/{$cal['key']}?export";
+
+            $calendars[$cal['id']] = $cal;
+        }
 
         return $calendars;
     }
