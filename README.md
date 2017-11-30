@@ -26,7 +26,7 @@ $config['calendars'] = [
     'key' => 'P7QW...3A3', // Kombination aus der Nextcloud-URL
     'name' => 'Sauna Reservation', // Darstellungsname im Frontend
     'image' => 'IMG_3016.jpg',
-    'infos' => NULL bzw. 'sauna-infos.php', // Optionaler Infotext zu diesem Kalender in externer Datei.
+    'infos' => NULL bzw. 'sauna-infos', // Optionaler Infotext zu diesem Kalender in externer Datei.
     'buttonlabel' => 'Reservieren', // Optional, Kosmetisch: Den Text auf dem 'Reservieren'-Knopf ändern.
     'notificationrecipient' => 'xxx@example.org', // Optional: Diese Email-Adresse wird über Reservationen informiert.
   ],
@@ -34,7 +34,7 @@ $config['calendars'] = [
 ];
 ```
 
-- Optional HTML-Snippet mit Kalenderinfos unter `www/application/views/calendar-infos/` als PHP-Datei ablegen. 
+- Optional HTML-Snippet mit Kalenderinfos unter `www/application/views/calendar-infos/` als PHP-Datei ablegen.
 
 ## Funktionen
 

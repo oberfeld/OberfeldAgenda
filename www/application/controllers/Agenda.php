@@ -12,7 +12,20 @@ class Agenda extends MY_Controller {
 		$calendars = $this->calendars->getAllCalendars();
 
 		// Output
-		$content = $this->load->view('calendar/list', ['calendars' => $calendars], TRUE);
-		$this->display($content);
+		$this->display($this->load->view('calendar/list', ['calendars' => $calendars], TRUE));
+	}
+
+	/**
+	 * Show an iframe with all events for this calendar
+	 *
+	 * @param string $calendarid
+	 * @return void
+	 */
+	public function termine($calendarid) {
+		// Fetch calendar
+		$calendar = $this->calendars->getCalendar($calendarid);
+
+		// Output
+		$this->display($this->load->view('calendar/events', ['calendar' => $calendar], TRUE), $calendar['name']);
 	}
 }

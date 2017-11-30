@@ -31,7 +31,7 @@ $config['calendars'] = [
       'key' => '6RZPBZ3KTZBDNPYM', // Kombination aus der Nextcloud-URL
       'name' => 'Sauna', // Darstellungsname im Frontend
       'image' => 'IMG_4442.jpg',
-      'infos' => 'sauna-infos.php', // Optionaler Infotext zu diesem Kalender in externer Datei.
+      'infos' => 'sauna-infos', // Optionaler Infotext zu diesem Kalender in externer Datei.
       'buttonlabel' => 'Buchen', // Optional, Kosmetisch: Den Text auf dem 'Reservieren'-Knopf ändern.
       'notificationrecipient' => '128625@gmail.com', // Optional: Diese Email-Adresse wird über Reservationen informiert.
     ],

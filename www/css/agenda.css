@@ -1,11 +1,16 @@
 .cal-card-wide {
     width: 512px;
 }
-.cal-card-wide > .mdl-card__title {
+
+.cal-card-narrow {
+    width: 256px;
+}
+
+.cal-card > .mdl-card__title {
     color: #fff;
     height: 176px;
 }
 
-.cal-card-wide > .mdl-card__menu {
+.cal-card > .mdl-card__menu {
     color: #fff;
 }

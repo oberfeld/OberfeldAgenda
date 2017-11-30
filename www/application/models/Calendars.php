@@ -27,4 +27,19 @@ class Calendars extends CI_Model {
 
         return $calendars;
     }
+
+    /**
+     * Get single calendar
+     *
+     * @param string $calendarid
+     * @return array
+     */
+    public function getCalendar($calendarid) {
+        $calendars = $this->getAllCalendars();
+
+        if(!isset($calendars[$calendarid]))
+            throw new Exception('Invalid calendar id.');
+
+        return $calendars[$calendarid];
+    }
 }
