@@ -9,6 +9,33 @@ Einfaches Frontend zur Reservation von Räumen und Erfassung von Terminen
 - Keine lokale Datenbank, alle Daten sind direkt auf dem CalDav-Server gespeichert.
 - Konfiguration unter `www/application/config/ENVIRONMENT/agenda.php`.
 
+## Neuen Kalender einrichten
+
+- Passendes Foto machen und als 1024 px breites Bild im Ordner `www/images` ablegen.
+- Als `IT Oberfeld` einloggen.
+- Auf <https://nextcloud.oberfeld.be/index.php/apps/calendar/> einen neuen Kalender erstellen, Name, Farbe festlegen.
+- Kalender teilen mit Benutzer `agendaUser` (Production) oder `agendaTestUser` (Development).
+- Jeweils Häcklein bei `kann bearbeiten` und `Link teilen` setzen.
+- Sich die öffentliche URL merken, benutzt werden zwei Teile: Der Key (z.B. `/P7QW...3A3/`) und die ID  (z.B. `Sauna-Reservation`)
+- In `www/application/config/ENVIRONMENT/agenda.php` ergänzen:
+
+```php
+$config['calendars'] = [
+  [
+    'id' => 'Sauna-Reservation', // Technische ID in der Nextcloud-URL
+    'key' => 'P7QW...3A3', // Kombination aus der Nextcloud-URL
+    'name' => 'Sauna Reservation', // Darstellungsname im Frontend
+    'image' => 'IMG_3016.jpg',
+    'infos' => NULL bzw. 'sauna-infos.php', // Optionaler Infotext zu diesem Kalender in externer Datei.
+    'buttonlabel' => 'Reservieren', // Optional, Kosmetisch: Den Text auf dem 'Reservieren'-Knopf ändern.
+    'notificationrecipient' => 'xxx@example.org', // Optional: Diese Email-Adresse wird über Reservationen informiert.
+  ],
+  ...
+]
+```
+
+- Optional HTML-Snippet mit Kalenderinfos unter `www/application/views/calendar-infos/` als PHP-Datei ablegen. 
+
 ## Funktionen
 
 - [ ] Alle verfügbaren Kalender auflisten
