@@ -28,4 +28,18 @@ class Agenda extends MY_Controller {
 		// Output
 		$this->display($this->load->view('calendar/events', ['calendar' => $calendar], TRUE), $calendar['name']);
 	}
+
+	/**
+	 * Show the reservation form
+	 *
+	 * @param string $calendarid
+	 * @return void
+	 */
+	public function reservieren($calendarid) {
+		// Fetch calendar
+		$calendar = $this->calendars->getCalendar($calendarid);
+
+		// Output
+		$this->display($this->load->view('calendar/newevent', ['calendar' => $calendar], TRUE), $calendar['name']);
+	}
 }
