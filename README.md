@@ -31,7 +31,7 @@ $config['calendars'] = [
     'notificationrecipient' => 'xxx@example.org', // Optional: Diese Email-Adresse wird über Reservationen informiert.
   ],
   ...
-]
+];
 ```
 
 - Optional HTML-Snippet mit Kalenderinfos unter `www/application/views/calendar-infos/` als PHP-Datei ablegen. 
