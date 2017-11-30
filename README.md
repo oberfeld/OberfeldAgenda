@@ -6,7 +6,8 @@ Einfaches Frontend zur Reservation von Räumen und Erfassung von Terminen
 
 `npm run serve` -> <http://localhost:8000>
 
-Keine lokale Datenbank, alle Daten sind direkt auf dem CalDav-Server gespeichert.
+- Keine lokale Datenbank, alle Daten sind direkt auf dem CalDav-Server gespeichert.
+- Konfiguration unter `www/application/config/ENVIRONMENT/agenda.php`.
 
 ## Funktionen
 
@@ -22,4 +23,8 @@ Keine lokale Datenbank, alle Daten sind direkt auf dem CalDav-Server gespeichert
 
 ## Credits
 
-Icon `if_schedule_3755` by Everaldo Coelho. (LGPL licensed.)
+- Icon `if_schedule_3755` von Everaldo Coelho (LGPL)
+- [Code Igniter 3]<https://codeigniter.com> (MIT)
+- [Material Design Lite]<https://getmdl.io/> (Apache 2.0)
+- [Sabre VObject]<http://sabre.io/vobject/> (BSD-3-Clause)
+- [simpleCalDAV]<https://github.com/thecsea/simpleCalDAV> (GPL 2.0)
