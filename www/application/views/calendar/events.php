@@ -31,6 +31,6 @@ if(isset($cal['infos'])) {
 </div>
 </div>
 
-<div class="mdl-cell mdl-cell--9-col"> <!-- TODO fix this height -->
+<div class="mdl-cell mdl-cell--9-col nextcloud-iframe">
 <iframe height="100%" src="<?php echo $cal['embedUrl']; ?>"></iframe>
 </div>
