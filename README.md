@@ -57,7 +57,7 @@ $config['calendars'] = [
 ## Credits
 
 - Icon `if_schedule_3755` von Everaldo Coelho (LGPL)
-- [Code Igniter 3]<https://codeigniter.com> (MIT)
-- [Material Design Lite]<https://getmdl.io/> (Apache 2.0)
-- [Sabre VObject]<http://sabre.io/vobject/> (BSD-3-Clause)
-- [simpleCalDAV]<https://github.com/thecsea/simpleCalDAV> (GPL 2.0)
+- [Code Igniter 3](https://codeigniter.com) (MIT)
+- [Material Design Lite](https://getmdl.io/) (Apache 2.0)
+- [Sabre VObject](http://sabre.io/vobject/) (BSD-3-Clause)
+- [simpleCalDAV](https://github.com/thecsea/simpleCalDAV) (GPL 2.0)
