@@ -33,13 +33,24 @@ class Agenda extends MY_Controller {
 	 * Show the reservation form
 	 *
 	 * @param string $calendarid
+	 * @param string $eventid
 	 * @return void
 	 */
-	public function reservieren($calendarid) {
+	public function reservieren($calendarid, $eventid = NULL) {
 		// Fetch calendar
 		$calendar = $this->calendars->getCalendar($calendarid);
 
+		$event = NULL;
+		if($eventid) {
+			$event = $this->events->getEvent($calendar, $eventid);
+		} 
+
+		// TODO handle POSTing of data
+
 		// Output
-		$this->display($this->load->view('calendar/eventform', ['calendar' => $calendar], TRUE), $calendar['name']);
+		$this->display($this->load->view('calendar/eventform', [
+			'calendar' => $calendar,
+			'event' => $event,
+		], TRUE), $calendar['name']);
 	}
 }
