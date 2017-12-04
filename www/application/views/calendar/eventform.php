@@ -1,6 +1,6 @@
 <?php
 /**
- * Show the events of a single calendar as an embedded iFrame
+ * Show the new form
  * 
  * @param array $calendar
  * @author Christian Studer <cstuder@existenz.ch>
@@ -16,11 +16,11 @@ if(isset($cal['infos'])) {
 
 $this->load->view('parts/cal-card-narrow', [
   'cal' => $cal,
-  'buttonlabel' => $cal['buttonlabel'] ?? 'Reservieren',
-  'buttonurl' => site_url("agenda/reservieren/{$cal['id']}"),
+  'buttonlabel' => 'Anzeigen',
+  'buttonurl' => site_url("agenda/termine/{$cal['id']}"),
 ]);
 
 ?>
-<div class="mdl-cell mdl-cell--9-col nextcloud-iframe">
-<iframe height="100%" src="<?php echo $cal['embedUrl']; ?>"></iframe>
+<div class="mdl-cell mdl-cell--9-col">
+Formular hier. <!-- TODO continue here -->
 </div>

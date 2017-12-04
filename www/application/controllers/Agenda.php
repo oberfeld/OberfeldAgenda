@@ -40,6 +40,6 @@ class Agenda extends MY_Controller {
 		$calendar = $this->calendars->getCalendar($calendarid);
 
 		// Output
-		$this->display($this->load->view('calendar/newevent', ['calendar' => $calendar], TRUE), $calendar['name']);
+		$this->display($this->load->view('calendar/eventform', ['calendar' => $calendar], TRUE), $calendar['name']);
 	}
 }

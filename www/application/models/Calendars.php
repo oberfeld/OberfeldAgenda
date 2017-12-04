@@ -21,6 +21,7 @@ class Calendars extends CI_Model {
         foreach($calendarsAsConfigured as $cal) {
             $cal['embedUrl'] = $this->config->item('nextcloud') . "index.php/apps/calendar/embed/{$cal['key']}";
             $cal['aboUrl'] = str_replace('https', 'webcal', $this->config->item('nextcloud')) . "remote.php/dav/public-calendars/{$cal['key']}?export";
+            $cal['buttonlabel'] = $cal['buttonlabel'] ?? 'Reservieren';
 
             $calendars[$cal['id']] = $cal;
         }
