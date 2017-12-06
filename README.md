@@ -14,6 +14,10 @@ Einfaches Frontend zur Reservation von Räumen und Erfassung von Terminen
 - [ ] Jeweils Bestätigungsmail an die Person und Kopie an die Verantwortliche Person
 - [ ] Audit-Log schreiben bei allen Änderungen
 
+### Optionale Features
+
+- [ ] Bei der Buchung eines Termines rechts alle Termine am gleichen Tag anzeigen (Per API nachladen wenn das `fromdate` feststeht)
+
 ## Entwicklung
 
 `npm run serve` -> <http://localhost:8000>
@@ -34,7 +38,7 @@ Noch nicht eingerichtet.
 - Auf <https://nextcloud.oberfeld.be/index.php/apps/calendar/> einen neuen Kalender erstellen, Name, Farbe festlegen.
 - Kalender teilen mit Benutzer `agendaUser` (Production) oder `agendaTestUser` (Development).
 - Jeweils Häcklein bei `kann bearbeiten` und `Link teilen` setzen.
-- Sich die öffentliche URL merken, benutzt werden zwei Teile: Der Key (z.B. `/P7QW...3A3/`) und die ID  (z.B. `Sauna-Reservation`)
+- Sich die öffentliche URL merken, benötigt werden zwei Teile: Der Key (z.B. `/P7QW...3A3/`) und die ID  (z.B. `Sauna-Reservation`)
 - In `www/application/config/ENVIRONMENT/agenda.php` ergänzen:
 
 ```php
@@ -44,9 +48,9 @@ $config['calendars'] = [
     'key' => 'P7QW...3A3', // Kombination aus der Nextcloud-URL
     'name' => 'Sauna Reservation', // Darstellungsname im Frontend
     'image' => 'IMG_3016.jpg',
-    'infos' => NULL bzw. 'sauna-infos', // Optionaler Infotext zu diesem Kalender in externer Datei.
-    'buttonlabel' => 'Reservieren', // Optional, Kosmetisch: Den Text auf dem 'Reservieren'-Knopf ändern.
-    'notificationrecipient' => 'xxx@example.org', // Optional: Diese Email-Adresse wird über Reservationen informiert.
+    'infos' => NULL bzw. 'sauna-infos', // Dateinamen des optionalen Infotextes zu diesem Kalender
+    'buttonlabel' => 'Reservieren', // Optional, kosmetisch: Den Text auf dem 'Reservieren'-Knopf ändern.
+    'notificationrecipient' => 'xxx@example.org', // Optional: Diese Email-Adresse wird über Reservationen und Änderungen informiert.
   ],
   ...
 ];
