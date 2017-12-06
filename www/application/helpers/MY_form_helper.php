@@ -32,3 +32,21 @@ function mdl_form_input($label, $name, $value, $type = 'text') {
 function mdl_form_submit($label) {
     return form_submit($label, $label, ['class' => 'mdl-button mdl-button--accent mdl-button--raised mdl-js-button mdl-js-ripple-effect']);
 }
+
+/**
+ * MDL Dropdown
+ * 
+ * @param string $label
+ * @param string $name
+ * @param array $options
+ * @param string $selected
+ * @return string
+ */
+function mdl_form_dropdown($label, $name, array $options, $selected = NULL) {
+    $select = '<div class="mdl-selectfield mdl-js-selectfield mdl-selectfield--floating-label">';
+    $select .= form_dropdown($name, $options, $selected, ['id' => "select__{$name}", 'class' => 'mdl-selectfield__select']);
+    $select .= "<label class=\"mdl-selectfield__label\" for=\"select__{$name}\">{$label}</label>";
+    $select .= '</div>';
+
+    return $select;
+}

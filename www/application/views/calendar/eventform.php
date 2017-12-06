@@ -11,6 +11,13 @@ $this->load->helper(['form', 'html']);
 $newEvent = !isset($event);
 $formtitle = $newEvent ? 'Neuen Termin erstellen' : 'Termin editieren';
 
+$timeoptions = [];
+for($h = 0; $h <= 24; $h++) {
+  $timeoptions[$h * 60] = sprintf('%02d:00', $h);
+  $timeoptions[($h * 60) + 30] = sprintf('%02d:30', $h);
+}
+array_pop($timeoptions); // Remove 24:30.
+
 if(isset($cal['infos'])) {
     $infocontent = $this->load->view("calendar-infos/{$calendar['infos']}", NULL, TRUE);
     echo '<div class="mdl-cell mdl-cell--12-col">' . $infocontent . '</div>';
@@ -29,7 +36,7 @@ $this->load->view('parts/cal-card-narrow', [
   echo form_open("agenda/reservieren/{$calendar['id']}");
 
   echo mdl_form_input('Beschreibung', 'subject', $event['subject'] ?? '') . br();
-  echo mdl_form_input('Von', 'fromdate', $event['fromdate'] ?? '', 'date') . br();
+  echo mdl_form_input('Von', 'fromdate', $event['fromdate'] ?? '', 'date') . ' ' . mdl_form_dropdown('Uhrzeit', 'frommin', $timeoptions, $event['frommin'] ?? '') . br();
   echo mdl_form_input('Bis', 'todate', $event['todate'] ?? '', 'date') . br();
 
   echo '<p>';
