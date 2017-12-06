@@ -7,7 +7,7 @@
  * @author Christian Studer <cstuder@existenz.ch>
  */
 
-$title = isset($title) ? "Oberfeld Agenda &mdash; {$title}" : 'Oberfeld Agenda';
+$title = isset($title) ? "{$title} &mdash; Oberfeld Agenda" : 'Oberfeld Agenda';
 
 ?><!DOCTYPE html>
 <html lang="de">
