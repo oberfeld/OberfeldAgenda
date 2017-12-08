@@ -43,7 +43,7 @@ function mdl_form_submit($label) {
  * @return string
  */
 function mdl_form_dropdown($label, $name, array $options, $selected = NULL) {
-    $select = '<div class="mdl-selectfield mdl-js-selectfield mdl-selectfield--floating-label">';
+    $select = '<div class="mdl-selectfield mdl-js-selectfield">';
     $select .= form_dropdown($name, $options, $selected, ['id' => "select__{$name}", 'class' => 'mdl-selectfield__select']);
     $select .= "<label class=\"mdl-selectfield__label\" for=\"select__{$name}\">{$label}</label>";
     $select .= '</div>';

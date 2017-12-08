@@ -36,7 +36,7 @@ $this->load->view('parts/cal-card-narrow', [
   echo form_open("agenda/reservieren/{$calendar['id']}");
 
   echo mdl_form_input('Beschreibung', 'subject', $event['subject'] ?? '') . br();
-  echo mdl_form_input('Von', 'fromdate', $event['fromdate'] ?? '', 'date') . ' ' . mdl_form_dropdown('Uhrzeit', 'frommin', $timeoptions, $event['frommin'] ?? '') . br();
+  echo mdl_form_input('Von', 'fromdate', $event['fromdate'] ?? '', 'date') . ' ' . mdl_form_dropdown('Uhrzeit', 'frommin', $timeoptions, $event['frommin'] ?? '480') . br();
   echo mdl_form_input('Bis', 'todate', $event['todate'] ?? '', 'date') . br();
 
   echo '<p>';
