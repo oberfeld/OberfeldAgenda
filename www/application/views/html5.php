@@ -6,6 +6,7 @@
  * @param string $content
  * @author Christian Studer <cstuder@existenz.ch>
  */
+$this->load->helper('html');
 
 $title = isset($title) ? "{$title} &mdash; Oberfeld Agenda" : 'Oberfeld Agenda';
 
@@ -17,12 +18,17 @@ $title = isset($title) ? "{$title} &mdash; Oberfeld Agenda" : 'Oberfeld Agenda';
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title><?php echo $title; ?></title>
-    <link rel="shortcut icon" href="images/if_schedule_3755.ico">
-    
-    <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:300,400,500,700" type="text/css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="<?php echo base_url('mdl/material.min.css'); ?>">
-    <link rel="stylesheet" href="<?php echo base_url('css/agenda.css'); ?>">
+    <?php
+      echo link_tag('images/if_schedule_3755.ico', 'shortcut icon', 'image/ico');
+      echo link_tag('http://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
+      echo link_tag('https://fonts.googleapis.com/icon?family=Material+Icons');
+      echo link_tag('css/mdl/material.min.css');
+      echo link_tag('css/mdl-selectfield/mdl-selectfield.min.css');
+      echo link_tag('css/agenda.css');
+
+      echo script_tag('css/mdl/material.min.js');
+      echo script_tag('css/mdl-selectfield/mdl-selectfield.min.js');
+    ?>
 </head>
 <body>
   <div class="mdl-layout mdl-js-layout">

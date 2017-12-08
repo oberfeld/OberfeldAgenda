@@ -17,6 +17,7 @@ Einfaches Frontend zur Reservation von Räumen und Erfassung von Terminen
 ### Optionale Features
 
 - [ ] Bei der Buchung eines Termines rechts alle Termine am gleichen Tag anzeigen (Per API nachladen wenn das `fromdate` feststeht)
+- [ ] Tägliches Backup aller Kalender
 
 ## Entwicklung
 
@@ -63,5 +64,6 @@ $config['calendars'] = [
 - Icon `if_schedule_3755` von Everaldo Coelho (LGPL)
 - [Code Igniter 3](https://codeigniter.com) (MIT)
 - [Material Design Lite](https://getmdl.io/) (Apache 2.0)
+- [mdl-selectfield](https://github.com/mebibou/mdl-selectfield) (MIT)
 - [Sabre VObject](http://sabre.io/vobject/) (BSD-3-Clause)
 - [simpleCalDAV](https://github.com/thecsea/simpleCalDAV) (GPL 2.0)
