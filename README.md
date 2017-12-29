@@ -67,3 +67,5 @@ $config['calendars'] = [
 - [mdl-selectfield](https://github.com/mebibou/mdl-selectfield) (MIT)
 - [Sabre VObject](http://sabre.io/vobject/) (BSD-3-Clause)
 - [simpleCalDAV](https://github.com/thecsea/simpleCalDAV) (GPL 2.0)
+- [jQuery](http://jquery.com/) (MIT)
+- [Moment.js](http://momentjs.com) (MIT)
