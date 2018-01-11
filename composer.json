@@ -1,6 +1,6 @@
 {
     "require": {
-        "thecsea/simple-caldav-client": "^0.1.5",
+        "thecsea/simple-caldav-client": "v0.1.7",
         "sabre/vobject": "4.1.4"
     }
 }

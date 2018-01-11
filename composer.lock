@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "content-hash": "b6bdfe45773d637b38777bf8064e965b",
+    "content-hash": "3598db4d943cd70ac0a90d6678ec300a",
     "packages": [
         {
             "name": "sabre/uri",
@@ -219,16 +219,16 @@
         },
         {
             "name": "thecsea/simple-caldav-client",
-            "version": "v0.1.5",
+            "version": "v0.1.7",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thecsea/simpleCalDAV.git",
-                "reference": "b8f62de8f639da87fc72057b241d7edb0c6988bf"
+                "reference": "178ccafdf99c7c98dfa533e382295871f8d01f89"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thecsea/simpleCalDAV/zipball/b8f62de8f639da87fc72057b241d7edb0c6988bf",
-                "reference": "b8f62de8f639da87fc72057b241d7edb0c6988bf",
+                "url": "https://api.github.com/repos/thecsea/simpleCalDAV/zipball/178ccafdf99c7c98dfa533e382295871f8d01f89",
+                "reference": "178ccafdf99c7c98dfa533e382295871f8d01f89",
                 "shasum": ""
             },
             "require": {
@@ -258,7 +258,7 @@
                 "Simple",
                 "client"
             ],
-            "time": "2015-12-02T19:10:12+00:00"
+            "time": "2018-01-10T16:31:35+00:00"
         }
     ],
     "packages-dev": [],
