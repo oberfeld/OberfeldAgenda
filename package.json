@@ -17,5 +17,8 @@
   "homepage": "https://github.com/oberfeld/OberfeldAgenda#readme",
   "devDependencies": {
     "webpack": "^3.10.0"
+  },
+  "dependencies": {
+    "material-components-web": "^0.28.0"
   }
 }
