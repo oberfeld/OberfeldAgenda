@@ -18,6 +18,7 @@ Einfaches Frontend zur Reservation von Räumen und Erfassung von Terminen
 
 - [ ] Bei der Buchung eines Termines rechts alle Termine am gleichen Tag anzeigen (Per API nachladen wenn das `fromdate` feststeht)
 - [ ] Tägliches Backup aller Kalender
+- [ ] Serienreservationen
 
 ## Entwicklung
 
