@@ -14,6 +14,10 @@ Einfaches Frontend zur Reservation von Räumen und Erfassung von Terminen
 - [ ] Jeweils Bestätigungsmail an die Person und Kopie an die Verantwortliche Person
 - [ ] Audit-Log schreiben bei allen Änderungen
 
+### Migration auf Material Design Components
+
+- [ ] Farben ändern auf das alte Theme (Orange)
+
 ### Optionale Features
 
 - [ ] Bei der Buchung eines Termines rechts alle Termine am gleichen Tag anzeigen (Per API nachladen wenn das `fromdate` feststeht)

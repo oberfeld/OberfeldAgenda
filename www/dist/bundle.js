@@ -80,6 +80,8 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 var $ = __webpack_require__(6);
 
+window.mdc.autoInit();
+
 
 
 /***/ }),

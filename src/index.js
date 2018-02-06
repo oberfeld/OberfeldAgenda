@@ -7,3 +7,5 @@ import './agenda.scss';
 
 var $ = require('jquery');
 
+window.mdc.autoInit();
+
