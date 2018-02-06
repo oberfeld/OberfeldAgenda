@@ -1,0 +1,29 @@
+// @import "material-components-web/material-components-web";
+
+.cal-card-wide {
+    width: 512px;
+    height: 256px;
+}
+
+.cal-card-narrow {
+    width: 256px;
+    height: 256px;
+}
+
+.nextcloud-iframe {
+    height: 1000px;
+}
+
+.cal-card > .mdl-card__title {
+    color: #fff;
+    height: 200px;
+}
+
+.cal-card > .mdl-card__menu {
+    color: #fff;
+}
+
+h2.mdl-card__title-text {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 0.5rem;
+}
