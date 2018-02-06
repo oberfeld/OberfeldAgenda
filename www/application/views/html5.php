@@ -29,7 +29,6 @@ $title = isset($title) ? "{$title} &mdash; Oberfeld Agenda" : 'Oberfeld Agenda';
     ?>
 </head>
 <body class="mdc-typography">
-  <div class="mdl-layout mdl-js-layout">
   <header class="mdc-toolbar">
     <div class="mdc-toolbar__row">
       <section class="mdc-toolbar__section mdc-toolbar__section--align-start">
@@ -40,13 +39,12 @@ $title = isset($title) ? "{$title} &mdash; Oberfeld Agenda" : 'Oberfeld Agenda';
       </section>
     </div>
   </header>
-  <main class="mdl-layout__content">
-    <div class="page-content">
-      <div class="mdl-grid">
-        <?php echo $content; ?>
+  <main>
+    <div class="mdc-layout-grid">
+      <div class="mdc-layout-grid__inner">
+          <?php echo $content; ?>
       </div>
     </div>
   </main>
-</div>
 </body>
 </html>

@@ -6,7 +6,7 @@
  * @author Christian Studer <cstuder@existenz.ch>
  */
 
- foreach($calendars as $cal) {
+foreach($calendars as $cal) {
 ?>
 <div class="cal-card-wide cal-card mdl-card mdl-shadow--2dp mdl-cell mdl-cell--6-col">
   <div class="mdl-card__title" style="background: url('<?php echo site_url("images/{$cal['image']}"); ?>') center / cover;">

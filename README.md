@@ -31,6 +31,8 @@ Einfaches Frontend zur Reservation von Räumen und Erfassung von Terminen
 - Keine lokale Datenbank, alle Daten sind direkt auf dem CalDav-Server gespeichert.
 - Konfiguration unter `www/application/config/ENVIRONMENT/agenda.php`.
 
+`npm run build` -> Generiert `bundle.js` aus `index.js` und `agenda.scss`.
+
 ### Deployment
 
 Noch nicht eingerichtet.

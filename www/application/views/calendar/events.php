@@ -11,7 +11,7 @@ $cal = $calendar;
 if(isset($cal['infos'])) {
     $infocontent = $this->load->view("calendar-infos/{$cal['infos']}", NULL, TRUE);
 
-    echo '<div class="mdl-cell mdl-cell--12-col">' . $infocontent . '</div>';
+    echo '<div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-12">' . $infocontent . '</div>';
 }
 
 $this->load->view('parts/cal-card-narrow', [
@@ -21,6 +21,6 @@ $this->load->view('parts/cal-card-narrow', [
 ]);
 
 ?>
-<div class="mdl-cell mdl-cell--9-col nextcloud-iframe">
-<iframe height="100%" src="<?php echo $cal['embedUrl']; ?>"></iframe>
+<div class="mdc-layout-grid__cell mdc-layout-grid__cell--span-9 nextcloud-iframe">
+  <iframe height="100%" src="<?php echo $cal['embedUrl']; ?>"></iframe>
 </div>
