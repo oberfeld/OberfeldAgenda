@@ -7,3 +7,5 @@ www/application/cache/*
 .vscode/
 
 .DS_Store
+
+node_modules
