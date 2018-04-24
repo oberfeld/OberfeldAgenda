@@ -1,6 +1,6 @@
 <?php
 /**
- * HTML5 header with Material Design Lite loaded and grid ready
+ * HTML5 header with Bootstrap loaded and grid ready
  * 
  * @param string $title
  * @param string $content
@@ -15,24 +15,18 @@ $title = isset($title) ? "{$title} &mdash; Oberfeld Agenda" : 'Oberfeld Agenda';
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
 
     <title><?php echo $title; ?></title>
     <?php
       echo link_tag('images/if_schedule_3755.ico', 'shortcut icon', 'image/ico');
-      echo link_tag('http://fonts.googleapis.com/css?family=Roboto:300,400,500,700');
-      echo link_tag('https://fonts.googleapis.com/icon?family=Material+Icons');
-      echo link_tag('css/mdl/material.min.css');
-      echo link_tag('css/mdl-selectfield/mdl-selectfield.min.css');
       echo link_tag('css/agenda.css');
-
-      echo script_tag('js/jquery-3.2.1.min.js');
-      echo script_tag('js/moment-with-locales.min.js');
-      echo script_tag('css/mdl/material.min.js');
-      echo script_tag('css/mdl-selectfield/mdl-selectfield.min.js');
     ?>
 </head>
 <body>
+<!-- 
   <div class="mdl-layout mdl-js-layout">
   <header class="mdl-layout__header mdl-layout__header--scroll">
     <div class="mdl-layout__header-row">
@@ -50,6 +44,9 @@ $title = isset($title) ? "{$title} &mdash; Oberfeld Agenda" : 'Oberfeld Agenda';
       </div>
     </div>
   </main>
-</div>
+</div> -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 </body>
 </html>
