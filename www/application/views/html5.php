@@ -23,6 +23,7 @@ $title = isset($title) ? "{$title} &mdash; Oberfeld Agenda" : 'Oberfeld Agenda';
     <?php
       echo link_tag('images/if_schedule_3755.ico', 'shortcut icon', 'image/ico');
       echo link_tag('css/agenda.css');
+      echo link_tag('css/open-iconic/font/css/open-iconic-bootstrap.css');
     ?>
 </head>
 <body>
