@@ -63,8 +63,8 @@ $config['calendars'] = [
 
 - Icon `if_schedule_3755` von Everaldo Coelho (LGPL)
 - [Code Igniter 3](https://codeigniter.com) (MIT)
-- [Material Design Lite](https://getmdl.io/) (Apache 2.0)
-- [mdl-selectfield](https://github.com/mebibou/mdl-selectfield) (MIT)
+- [Bootstrap 4](hhttps://getbootstrap.com) (MIT)
+- [Open Iconic](https://useiconic.com/open/) (MIT und Open Font License)
 - [Sabre VObject](http://sabre.io/vobject/) (BSD-3-Clause)
 - [simpleCalDAV](https://github.com/thecsea/simpleCalDAV) (GPL 2.0)
 - [jQuery](http://jquery.com/) (MIT)
