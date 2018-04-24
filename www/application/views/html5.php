@@ -26,17 +26,9 @@ $title = isset($title) ? "{$title} &mdash; Oberfeld Agenda" : 'Oberfeld Agenda';
     ?>
 </head>
 <body>
+<?php $this->load->view('parts/navbar', ['title' => $title]); ?>
 <!-- 
-  <div class="mdl-layout mdl-js-layout">
-  <header class="mdl-layout__header mdl-layout__header--scroll">
-    <div class="mdl-layout__header-row">
-      <span class="mdl-layout-title"><?php echo $title; ?></span>
-      <div class="mdl-layout-spacer"></div>
-      <nav class="mdl-navigation">
-        <a class="mdl-navigation__link" href="<?php echo site_url('/'); ?>">Zur Übersicht</a>
-      </nav>
-    </div>
-  </header>
+  
   <main class="mdl-layout__content">
     <div class="page-content">
       <div class="mdl-grid">
