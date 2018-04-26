@@ -16,7 +16,7 @@
       <div class="card">
         <img class="card-img-top" src="<?php echo site_url("images/{$cal['image']}"); ?>" alt="Bild für <?php echo $cal['name']; ?>">
         <div class="card-img-overlay">
-          <a href="<?php echo $cal['aboUrl']; ?>" title="Kalender abonnieren" class="float-right"><span class="oi oi-cloud-download"></span></a>
+          <a href="<?php echo $cal['aboUrl']; ?>" title="Kalender abonnieren" class="float-right white"><span class="oi oi-cloud-download"></span></a>
         </div>
         <div class="card-body">
           <h5 class="card-title"><?php echo $cal['name']; ?></h5>
