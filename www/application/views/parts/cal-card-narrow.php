@@ -2,24 +2,17 @@
 /**
  * Small rectangular calendar card with a button
  * 
- * @param array $cal
+ * @param array $calendar
  * @param string $buttonlabel
  * @param string $buttonurl
  * @author Christian Studer <cstuder@existenz.ch>
  */
 ?>
-<div class="cal-card-narrow cal-card mdl-card mdl-shadow--2dp mdl-cell mdl-cell--3-col">
-<div class="mdl-card__title" style="background: url('<?php echo site_url("images/{$cal['image']}"); ?>') center / cover;">
-  <h2 class="mdl-card__title-text"><?php echo $cal['name']; ?></h2>
-</div>
-<div class="mdl-card__actions mdl-card--border">
-  <a class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect" href="<?php echo $buttonurl; ?>">
-  <?php echo $buttonlabel; ?>
-  </a>
-</div>
-<div class="mdl-card__menu">
-  <a class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect" title="Kalender abonnieren" href="<?php echo $cal['aboUrl']; ?>">
-    <i class="material-icons">cloud_download</i>
-  </a>
-</div>
+<div class="card">
+  <img class="card-img-top" src="<?php echo site_url("images/{$calendar['image']}"); ?>" alt="Bild für <?php echo $calendar['name']; ?>">
+  <div class="card-body">
+    <a href="<?php echo $calendar['aboUrl']; ?>" title="Kalender abonnieren" class="float-right"><span class="oi oi-cloud-download"></span></a>
+    <h5 class="card-title"><?php echo $calendar['name']; ?></h5>
+    <a href="<?php echo site_url($buttonurl); ?>" class="btn btn-primary"><?php echo $buttonlabel; ?></a>
+  </div>
 </div>

@@ -6,21 +6,36 @@
  * @author Christian Studer <cstuder@existenz.ch>
  */
 
-$cal = $calendar;
+$calendar;
 
-if(isset($cal['infos'])) {
-    $infocontent = $this->load->view("calendar-infos/{$cal['infos']}", NULL, TRUE);
+if(isset($calendar['infos'])) {
+    $infocontent = $this->load->view("calendar-infos/{$calendar['infos']}", NULL, TRUE);
+?>
+<div class="row">
+  <div class="col-sm-12">
+    <div class="alert alert-info" role="alert">
+      <?php echo $infocontent; ?>
+    </div>
+  </div>
+</div>
 
-    echo '<div class="mdl-cell mdl-cell--12-col">' . $infocontent . '</div>';
+<?php
 }
 
-$this->load->view('parts/cal-card-narrow', [
-  'cal' => $cal,
-  'buttonlabel' => $cal['buttonlabel'] ?? 'Reservieren',
-  'buttonurl' => site_url("agenda/reservieren/{$cal['id']}"),
-]);
-
+// Left part: Cal card narrow, right part: iframe
 ?>
-<div class="mdl-cell mdl-cell--9-col nextcloud-iframe">
-<iframe height="100%" src="<?php echo $cal['embedUrl']; ?>"></iframe>
+<div class="row">
+  <div class="col-sm-2">
+    <?php
+    $this->load->view('parts/cal-card-narrow', [
+      'calendar' => $calendar,
+      'buttonlabel' => $calendar['buttonlabel'] ?? 'Reservieren',
+      'buttonurl' => site_url("agenda/reservieren/{$calendar['id']}"),
+    ]);
+?>
+  </div>
+
+  <div class="col-sm-10">
+    <iframe height="100%" src="<?php echo $calendar['embedUrl']; ?>" class="nextcloud-iframe"></iframe>
+  </div>
 </div>
