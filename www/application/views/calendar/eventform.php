@@ -18,20 +18,25 @@ for($h = 0; $h <= 24; $h++) {
 }
 array_pop($timeoptions); // Remove 24:30.
 
-if(isset($cal['infos'])) {
-    $infocontent = $this->load->view("calendar-infos/{$calendar['infos']}", NULL, TRUE);
-    echo '<div class="mdl-cell mdl-cell--12-col">' . $infocontent . '</div>';
-}
+// Top: Show calendar informations
+$this->load->view('parts/calendar-infos', ['calendar' => $calendar]);
 
-$this->load->view('parts/cal-card-narrow', [
-  'cal' => $calendar,
-  'buttonlabel' => 'Anzeigen',
-  'buttonurl' => site_url("agenda/termine/{$calendar['id']}"),
-]);
-
+// Left part: Cal card narrow, right part: event form
 ?>
-<div class="mdl-cell mdl-cell--9-col">
-<h1><?php echo $formtitle; ?></h1>
+<div class="row">
+  <div class="col-sm-2">
+    <?php
+      $this->load->view('parts/cal-card-narrow', [
+        'calendar' => $calendar,
+        'buttonlabel' => 'Anzeigen',
+        'buttonurl' => site_url("agenda/termine/{$calendar['id']}"),
+      ]);
+    ?>
+  </div>
+
+  <div class="col-sm-10">
+    <h1><?php echo $formtitle; ?></h1>
+
 <?php
   echo form_open("agenda/reservieren/{$calendar['id']}");
 
@@ -52,4 +57,5 @@ $this->load->view('parts/cal-card-narrow', [
   
   echo form_close();
 ?>
+  </div>
 </div>
