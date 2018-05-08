@@ -13,6 +13,6 @@
   <div class="card-body">
     <a href="<?php echo $calendar['aboUrl']; ?>" title="Kalender abonnieren" class="float-right"><span class="oi oi-cloud-download"></span></a>
     <h5 class="card-title"><?php echo $calendar['name']; ?></h5>
-    <a href="<?php echo site_url($buttonurl); ?>" class="btn btn-primary"><?php echo $buttonlabel; ?></a>
+    <a href="<?php echo $buttonurl; ?>" class="btn btn-primary"><?php echo $buttonlabel; ?></a>
   </div>
 </div>
