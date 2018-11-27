@@ -6,4 +6,4 @@
  * 
  * @author Christian Studer <cstuder@existenz.ch>
  */
-$config['nextcloud'] = 'https://nextcloud.oberfeld.be/';
+$config['nextcloud'] = 'https://chischte.oberfeld.be/';

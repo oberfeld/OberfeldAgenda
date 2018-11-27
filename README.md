@@ -36,7 +36,7 @@ Noch nicht eingerichtet.
 
 - Passendes Foto machen und als 1024 px breites Bild im Ordner `www/images` ablegen.
 - Als `IT Oberfeld` in der Nextcloud einloggen.
-- Auf <https://nextcloud.oberfeld.be/index.php/apps/calendar/> einen neuen Kalender erstellen, Name, Farbe festlegen.
+- Auf <https://chischte.oberfeld.be/index.php/apps/calendar/> einen neuen Kalender erstellen, Name, Farbe festlegen.
 - Kalender teilen mit Benutzer `agendaUser` (Production) oder `agendaTestUser` (Development).
 - Jeweils Häcklein bei `kann bearbeiten` und `Link teilen` setzen.
 - Sich die öffentliche URL merken, benötigt werden zwei Teile: Der Key (z.B. `/P7QW...3A3/`) und die ID  (z.B. `Sauna-Reservation`)
