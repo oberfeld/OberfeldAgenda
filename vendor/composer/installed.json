@@ -1,50 +1,5 @@
 [
     {
-        "name": "thecsea/simple-caldav-client",
-        "version": "v0.1.5",
-        "version_normalized": "0.1.5.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/thecsea/simpleCalDAV.git",
-            "reference": "b8f62de8f639da87fc72057b241d7edb0c6988bf"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/thecsea/simpleCalDAV/zipball/b8f62de8f639da87fc72057b241d7edb0c6988bf",
-            "reference": "b8f62de8f639da87fc72057b241d7edb0c6988bf",
-            "shasum": ""
-        },
-        "require": {
-            "php": ">=5.3.0"
-        },
-        "time": "2015-12-02T19:10:12+00:00",
-        "type": "library",
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "it\\thecsea\\simple_caldav_client\\": "src/"
-            }
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "GPL-2.0"
-        ],
-        "authors": [
-            {
-                "name": "claudio cardinale",
-                "email": "cardi@thecsea.it",
-                "homepage": "http://thecsea.it"
-            }
-        ],
-        "description": "A simple and complete php caldav client",
-        "homepage": "http://www.thecsea.it",
-        "keywords": [
-            "CalDAV",
-            "Simple",
-            "client"
-        ]
-    },
-    {
         "name": "sabre/uri",
         "version": "2.1.1",
         "version_normalized": "2.1.1.0",
@@ -98,83 +53,18 @@
         ]
     },
     {
-        "name": "sabre/xml",
-        "version": "2.0.0",
-        "version_normalized": "2.0.0.0",
-        "source": {
-            "type": "git",
-            "url": "https://github.com/sabre-io/xml.git",
-            "reference": "054292959a1f2b64c10c9c7a03a816ba1872b8a3"
-        },
-        "dist": {
-            "type": "zip",
-            "url": "https://api.github.com/repos/sabre-io/xml/zipball/054292959a1f2b64c10c9c7a03a816ba1872b8a3",
-            "reference": "054292959a1f2b64c10c9c7a03a816ba1872b8a3",
-            "shasum": ""
-        },
-        "require": {
-            "ext-dom": "*",
-            "ext-xmlreader": "*",
-            "ext-xmlwriter": "*",
-            "lib-libxml": ">=2.6.20",
-            "php": ">=7.0",
-            "sabre/uri": ">=1.0,<3.0.0"
-        },
-        "require-dev": {
-            "phpunit/phpunit": "*",
-            "sabre/cs": "~1.0.0"
-        },
-        "time": "2016-11-16T00:41:01+00:00",
-        "type": "library",
-        "installation-source": "dist",
-        "autoload": {
-            "psr-4": {
-                "Sabre\\Xml\\": "lib/"
-            },
-            "files": [
-                "lib/Deserializer/functions.php",
-                "lib/Serializer/functions.php"
-            ]
-        },
-        "notification-url": "https://packagist.org/downloads/",
-        "license": [
-            "BSD-3-Clause"
-        ],
-        "authors": [
-            {
-                "name": "Evert Pot",
-                "email": "me@evertpot.com",
-                "homepage": "http://evertpot.com/",
-                "role": "Developer"
-            },
-            {
-                "name": "Markus Staab",
-                "email": "markus.staab@redaxo.de",
-                "role": "Developer"
-            }
-        ],
-        "description": "sabre/xml is an XML library that you may not hate.",
-        "homepage": "https://sabre.io/xml/",
-        "keywords": [
-            "XMLReader",
-            "XMLWriter",
-            "dom",
-            "xml"
-        ]
-    },
-    {
         "name": "sabre/vobject",
-        "version": "4.1.4",
-        "version_normalized": "4.1.4.0",
+        "version": "4.1.6",
+        "version_normalized": "4.1.6.0",
         "source": {
             "type": "git",
             "url": "https://github.com/sabre-io/vobject.git",
-            "reference": "6484b9d660822c5e221c76122ce8ea658ecc9c5b"
+            "reference": "122cacbdea2c6133ac04db86ec05854beef75adf"
         },
         "dist": {
             "type": "zip",
-            "url": "https://api.github.com/repos/sabre-io/vobject/zipball/6484b9d660822c5e221c76122ce8ea658ecc9c5b",
-            "reference": "6484b9d660822c5e221c76122ce8ea658ecc9c5b",
+            "url": "https://api.github.com/repos/sabre-io/vobject/zipball/122cacbdea2c6133ac04db86ec05854beef75adf",
+            "reference": "122cacbdea2c6133ac04db86ec05854beef75adf",
             "shasum": ""
         },
         "require": {
@@ -189,7 +79,7 @@
         "suggest": {
             "hoa/bench": "If you would like to run the benchmark scripts"
         },
-        "time": "2017-12-22T14:16:56+00:00",
+        "time": "2018-04-20T07:22:50+00:00",
         "bin": [
             "bin/vobject",
             "bin/generate_vcards"
@@ -259,6 +149,115 @@
             "vcf",
             "xCal",
             "xCard"
+        ]
+    },
+    {
+        "name": "sabre/xml",
+        "version": "2.1.1",
+        "version_normalized": "2.1.1.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/sabre-io/xml.git",
+            "reference": "c5f510f8d0fa8135de9495145e2758f56037aa1e"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/sabre-io/xml/zipball/c5f510f8d0fa8135de9495145e2758f56037aa1e",
+            "reference": "c5f510f8d0fa8135de9495145e2758f56037aa1e",
+            "shasum": ""
+        },
+        "require": {
+            "ext-dom": "*",
+            "ext-xmlreader": "*",
+            "ext-xmlwriter": "*",
+            "lib-libxml": ">=2.6.20",
+            "php": ">=7.0",
+            "sabre/uri": ">=1.0,<3.0.0"
+        },
+        "require-dev": {
+            "phpunit/phpunit": "*"
+        },
+        "time": "2018-10-09T11:41:10+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Sabre\\Xml\\": "lib/"
+            },
+            "files": [
+                "lib/Deserializer/functions.php",
+                "lib/Serializer/functions.php"
+            ]
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "BSD-3-Clause"
+        ],
+        "authors": [
+            {
+                "name": "Evert Pot",
+                "email": "me@evertpot.com",
+                "homepage": "http://evertpot.com/",
+                "role": "Developer"
+            },
+            {
+                "name": "Markus Staab",
+                "email": "markus.staab@redaxo.de",
+                "role": "Developer"
+            }
+        ],
+        "description": "sabre/xml is an XML library that you may not hate.",
+        "homepage": "https://sabre.io/xml/",
+        "keywords": [
+            "XMLReader",
+            "XMLWriter",
+            "dom",
+            "xml"
+        ]
+    },
+    {
+        "name": "thecsea/simple-caldav-client",
+        "version": "v0.1.8",
+        "version_normalized": "0.1.8.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/thecsea/simpleCalDAV.git",
+            "reference": "e672f89944e0e9ab10975d9abb44afff0fdaafc5"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/thecsea/simpleCalDAV/zipball/e672f89944e0e9ab10975d9abb44afff0fdaafc5",
+            "reference": "e672f89944e0e9ab10975d9abb44afff0fdaafc5",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.3.0"
+        },
+        "time": "2018-04-16T15:35:30+00:00",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "it\\thecsea\\simple_caldav_client\\": "src/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "GPL-2.0"
+        ],
+        "authors": [
+            {
+                "name": "claudio cardinale",
+                "email": "cardi@thecsea.it",
+                "homepage": "http://thecsea.it"
+            }
+        ],
+        "description": "A simple and complete php caldav client",
+        "homepage": "http://www.thecsea.it",
+        "keywords": [
+            "CalDAV",
+            "Simple",
+            "client"
         ]
     }
 ]

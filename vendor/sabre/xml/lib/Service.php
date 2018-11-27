@@ -131,7 +131,9 @@ class Service {
      *
      * @param string|string[] $rootElementName
      * @param string|resource $input
-     * @return void
+     * @param string|null $contextUri
+     * @throws ParseException
+     * @return array|object|string
      */
     function expect($rootElementName, $input, string $contextUri = null) {
 
@@ -173,7 +175,7 @@ class Service {
      * of the domain.
      *
      * @param string|array|XmlSerializable $value
-     * @return void
+     * @return string
      */
     function write(string $rootElementName, $value, string $contextUri = null) {
 
@@ -235,6 +237,7 @@ class Service {
      * mapValueObject().
      *
      * @param object $object
+     * @throws \InvalidArgumentException
      * @return void
      */
     function writeValueObject($object, string $contextUri = null) {
@@ -256,7 +259,7 @@ class Service {
      *
      * If the string was invalid, it will throw an InvalidArgumentException.
      *
-     * @throws InvalidArgumentException
+     * @throws \InvalidArgumentException
      */
     static function parseClarkNotation(string $str) : array {
         static $cache = [];

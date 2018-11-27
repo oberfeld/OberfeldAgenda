@@ -1,10 +1,10 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "b13ac0590f709d36bd5175a87727b20c",
+    "content-hash": "4b6037c37730b4f9bf1913da1112918f",
     "packages": [
         {
             "name": "sabre/uri",
@@ -59,16 +59,16 @@
         },
         {
             "name": "sabre/vobject",
-            "version": "4.1.4",
+            "version": "4.1.6",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sabre-io/vobject.git",
-                "reference": "6484b9d660822c5e221c76122ce8ea658ecc9c5b"
+                "reference": "122cacbdea2c6133ac04db86ec05854beef75adf"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sabre-io/vobject/zipball/6484b9d660822c5e221c76122ce8ea658ecc9c5b",
-                "reference": "6484b9d660822c5e221c76122ce8ea658ecc9c5b",
+                "url": "https://api.github.com/repos/sabre-io/vobject/zipball/122cacbdea2c6133ac04db86ec05854beef75adf",
+                "reference": "122cacbdea2c6133ac04db86ec05854beef75adf",
                 "shasum": ""
             },
             "require": {
@@ -152,20 +152,20 @@
                 "xCal",
                 "xCard"
             ],
-            "time": "2017-12-22T14:16:56+00:00"
+            "time": "2018-04-20T07:22:50+00:00"
         },
         {
             "name": "sabre/xml",
-            "version": "2.0.0",
+            "version": "2.1.1",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sabre-io/xml.git",
-                "reference": "054292959a1f2b64c10c9c7a03a816ba1872b8a3"
+                "reference": "c5f510f8d0fa8135de9495145e2758f56037aa1e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sabre-io/xml/zipball/054292959a1f2b64c10c9c7a03a816ba1872b8a3",
-                "reference": "054292959a1f2b64c10c9c7a03a816ba1872b8a3",
+                "url": "https://api.github.com/repos/sabre-io/xml/zipball/c5f510f8d0fa8135de9495145e2758f56037aa1e",
+                "reference": "c5f510f8d0fa8135de9495145e2758f56037aa1e",
                 "shasum": ""
             },
             "require": {
@@ -177,8 +177,7 @@
                 "sabre/uri": ">=1.0,<3.0.0"
             },
             "require-dev": {
-                "phpunit/phpunit": "*",
-                "sabre/cs": "~1.0.0"
+                "phpunit/phpunit": "*"
             },
             "type": "library",
             "autoload": {
@@ -215,20 +214,20 @@
                 "dom",
                 "xml"
             ],
-            "time": "2016-11-16T00:41:01+00:00"
+            "time": "2018-10-09T11:41:10+00:00"
         },
         {
             "name": "thecsea/simple-caldav-client",
-            "version": "v0.1.6",
+            "version": "v0.1.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/thecsea/simpleCalDAV.git",
-                "reference": "561c07e266d09756b7ffe840f8a30a3cba25e9bf"
+                "reference": "e672f89944e0e9ab10975d9abb44afff0fdaafc5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/thecsea/simpleCalDAV/zipball/561c07e266d09756b7ffe840f8a30a3cba25e9bf",
-                "reference": "561c07e266d09756b7ffe840f8a30a3cba25e9bf",
+                "url": "https://api.github.com/repos/thecsea/simpleCalDAV/zipball/e672f89944e0e9ab10975d9abb44afff0fdaafc5",
+                "reference": "e672f89944e0e9ab10975d9abb44afff0fdaafc5",
                 "shasum": ""
             },
             "require": {
@@ -258,7 +257,7 @@
                 "Simple",
                 "client"
             ],
-            "time": "2018-01-10T13:53:26+00:00"
+            "time": "2018-04-16T15:35:30+00:00"
         }
     ],
     "packages-dev": [],
