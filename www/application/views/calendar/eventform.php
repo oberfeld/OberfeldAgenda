@@ -41,14 +41,16 @@ $this->load->view('parts/calendar-infos', ['calendar' => $calendar]);
   echo form_open("agenda/reservieren/{$calendar['id']}");
 
   echo bootstrap_form_input('Beschreibung', 'subject', $event['subject'] ?? '', 'text', TRUE) . br();
-  echo bootstrap_form_input('Von', 'fromdate', $event['fromdate'] ?? '', 'date', TRUE) . ' ' . bootstrap_form_dropdown('Uhrzeit', 'frommin', $timeoptions, $event['frommin'] ?? '480', TRUE) . br();
-  echo bootstrap_form_input('Bis', 'todate', $event['todate'] ?? '', 'date', TRUE) . ' ' . bootstrap_form_dropdown('Uhrzeit', 'tomin', $timeoptions, $event['tomin'] ?? '540', TRUE) . br();
+  
+  echo '<div class="col-sm-5">' . bootstrap_form_input('Von', 'fromdate', $event['fromdate'] ?? '', 'date', TRUE) . '</div><div class="col-sm-5">' . bootstrap_form_dropdown('Startzeit', 'frommin', $timeoptions, $event['frommin'] ?? '480', TRUE) . '</div>' . br();
+  
+  echo '<div class="col-sm-5">' . bootstrap_form_input('Bis', 'todate', $event['todate'] ?? '', 'date', TRUE) . '</div><div class="col-sm-5">' . bootstrap_form_dropdown('Endzeit', 'tomin', $timeoptions, $event['tomin'] ?? '540', TRUE) . '</div>' . br();
 
   echo '<p>';
 
   echo bootstrap_form_input('Dein Name', 'name', $event['name'] ?? '', 'text', TRUE) . br();
   echo bootstrap_form_input('Deine Email-Adresse', 'name', $event['email'] ?? '', 'email', TRUE) . br();
-  echo bootstrap_form_input('Deine Telefonnummer', 'tel', $event['tel'] ?? '', 'tel', FALSE) . br();
+  echo bootstrap_form_input('Deine Telefonnummer (Optional)', 'tel', $event['tel'] ?? '', 'tel', FALSE) . br();
 
   echo '<p>';
 
