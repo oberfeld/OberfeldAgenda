@@ -7,7 +7,7 @@ Einfaches Frontend zur Reservation von Räumen und Erfassung von Terminen
 - [x] Alle verfügbaren Kalender auflisten
 - [X] Kalender inkl. Infotext und ICS-Link anzeigen. Kalender wird direkt in einem iFrame von Nextcloud eingebunden
 - [X] Knopf zum Erstellen eines neuen Termins
-- [ ] Termin-Formular mit Startzeit, Endzeit, Titel, Name, Email, Telefon, Speichern
+- [X] Termin-Formular mit Startzeit, Endzeit, Titel, Name, Email, Telefon, Speichern
 - [ ] Formulareingabe erstellt Termin im Kalender
 - [ ] Bestätigungsmail an die Person und Kopie an die Verantwortliche Person
 - [ ] Im Mail: Direkter Link zurück zum Editieren des Termins, im Anhang der Termin als iCal-Event
