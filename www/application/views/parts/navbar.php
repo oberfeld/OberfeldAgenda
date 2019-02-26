@@ -10,6 +10,8 @@
   <a class="navbar-brand" href="#"><?php echo $title; ?></a>
   
   <div class="justify-content-between" id="navbarSupportedContent">
-        <a class="nav-link" href="/">Zurück zur Übersicht</a>
+        <?php if($this->uri->uri_string()) { ?>
+          <a class="nav-link" href="/">Zurück zur Übersicht</a>
+        <?php } ?>
    </div>
 </nav>
