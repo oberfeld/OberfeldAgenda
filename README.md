@@ -70,3 +70,4 @@ $config['calendars'] = [
 - [simpleCalDAV](https://github.com/thecsea/simpleCalDAV) (GPL 2.0)
 - [jQuery](http://jquery.com/) (MIT)
 - [Moment.js](http://momentjs.com) (MIT)
+- [Gijgo Datepicker](https://gijgo.com/datepicker) (MIT)
